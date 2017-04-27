@@ -41,11 +41,11 @@ public class RxJavaSchedulers {
                 });
     }
 
-    public void showThreadName(String str) {
+    private void showThreadName(String str) {
         log(str + " thread:" + Thread.currentThread().getName());
     }
 
-    public void log(String str) {
-        Log.i("MainActivity", str);
+    private void log(String str) {
+        Log.i("RxJavaSchedulers", str);
     }
 }

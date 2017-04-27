@@ -1,8 +1,10 @@
-package com.csl.codedemos;
+package com.csl.codedemos.view;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+
+import com.csl.codedemos.R;
 
 /**
  * Created by ChangsenLai on 2017/4/26.
