@@ -7,9 +7,11 @@ import android.support.annotation.Nullable;
 
 import com.csl.codedemos.R;
 import com.csl.codedemos.databinding.ActivityMainBinding;
+import com.csl.codedemos.view.CoordingtorLayoutActivity;
 
 /**
  * Created by ChangsenLai on 2017/4/21.
+ *
  */
 
 public class MainActivity extends Activity {
@@ -28,6 +30,9 @@ public class MainActivity extends Activity {
         public void testIconView() {
             toIconViewActivity();
         }
+        public void testCoordingtorLayout() {
+            toCoordingtorLayoutActivity();
+        }
     }
 
     private void toIconViewActivity() {
@@ -37,11 +42,12 @@ public class MainActivity extends Activity {
     private void init() {
     }
 
-    private void test() {
-    }
-
     private void toDrawableTextViewActivity() {
         DrawableTextViewActivity.toActivity(this);
+    }
+
+    private void toCoordingtorLayoutActivity() {
+        CoordingtorLayoutActivity.start(this);
     }
 
 

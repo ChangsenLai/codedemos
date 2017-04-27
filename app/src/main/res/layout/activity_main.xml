@@ -23,6 +23,12 @@
             android:layout_height="wrap_content"
             android:onClick="@{() -> event.testIconView()}"
             android:text="test IconView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> event.testCoordingtorLayout()}"
+            android:text="test CoordingtorLayout" />
     </LinearLayout>
 
 </layout>

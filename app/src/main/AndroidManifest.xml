@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".activity.DrawableTextViewActivity" />
         <activity android:name=".activity.IconViewActivity" />
+        <activity android:name=".view.CoordingtorLayoutActivity" />
 
     </application>
 
