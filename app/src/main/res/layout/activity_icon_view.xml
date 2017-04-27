@@ -12,8 +12,8 @@
             android:layout_height="wrap_content"
             app:image="@mipmap/ic_launcher"
             app:text="试试"
-            app:text_color="@android:color/darker_gray"
-            app:text_size="10sp" />
+            app:text_color="@android:color/holo_blue_light"
+            app:text_size="14sp" />
     </LinearLayout>
 
 </layout>

@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.csl.codedemos.R;
+import com.csl.codedemos.util.ScreenUtil;
 
 /**
  * Created by laichangsen on 2017/4/27.
@@ -22,6 +23,7 @@ public class IconView extends FrameLayout {
 
     private ImageView imageView;
     private TextView textView;
+    private Context mContext;
 
     public IconView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
@@ -33,6 +35,7 @@ public class IconView extends FrameLayout {
     }
 
     private void init(Context context, AttributeSet attrs) {
+        mContext = context;
         View rootView = LayoutInflater.from(context).inflate(R.layout.icon_view, this);
         this.imageView = (ImageView) rootView.findViewById(R.id.image);
         this.textView = (TextView) rootView.findViewById(R.id.text);
@@ -72,7 +75,7 @@ public class IconView extends FrameLayout {
         textView.setText(typedArray.getString(R.styleable.IconView_text));
         int textSize = typedArray.getDimensionPixelOffset(R.styleable.IconView_text_size, 0);
         if (textSize != 0) {
-            textView.setTextSize(textSize);
+            textView.setTextSize(ScreenUtil.px2sp(mContext, textSize));
         }
         int textColor = typedArray.getColor(R.styleable.IconView_text_color, -1);
         if (textColor != -1) {
