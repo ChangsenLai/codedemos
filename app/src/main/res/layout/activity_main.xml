@@ -15,8 +15,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="@{() -> event.testDrawable()}"
-            android:text="to DrawableTextView" />
+            android:onClick="@{() -> event.testDrawableTextViewActivity()}"
+            android:text="test DrawableTextView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> event.testIconView()}"
+            android:text="test IconView" />
     </LinearLayout>
 
 </layout>

@@ -22,9 +22,16 @@ public class MainActivity extends Activity {
     }
 
     public class Event {
-        public void testDrawable() {
-            testDrawableTextView();
+        public void testDrawableTextViewActivity() {
+            toDrawableTextViewActivity();
         }
+        public void testIconView() {
+            toIconViewActivity();
+        }
+    }
+
+    private void toIconViewActivity() {
+        IconViewActivity.toActivity(this);
     }
 
     private void init() {
@@ -33,7 +40,7 @@ public class MainActivity extends Activity {
     private void test() {
     }
 
-    private void testDrawableTextView() {
+    private void toDrawableTextViewActivity() {
         DrawableTextViewActivity.toActivity(this);
     }
 

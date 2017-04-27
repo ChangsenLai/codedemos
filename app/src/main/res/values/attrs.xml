@@ -10,4 +10,18 @@
         <attr name="right_drawable" format="reference" />
     </declare-styleable>
 
+    <declare-styleable name="IconView">
+        <attr name="image" format="reference" />
+        <attr name="text_marginTop" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="text_size" format="dimension" />
+        <attr name="image_width" format="dimension" />
+        <attr name="image_height" format="dimension" />
+        <attr name="image_scaleType">
+            <enum name="centerCrop" value="1"/>
+            <enum name="centerInside" value="2" />
+        </attr>
+    </declare-styleable>
+
 </resources>
