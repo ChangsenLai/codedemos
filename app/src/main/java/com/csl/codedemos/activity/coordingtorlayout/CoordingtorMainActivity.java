@@ -45,7 +45,7 @@ public class CoordingtorMainActivity extends BaseActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Snackbar.make(binding.fab, "this is snackbar", LENGTH_SHORT).show();
+                Snackbar.make(getWindow().getDecorView(), "this is snackbar", LENGTH_SHORT).show();
             }
         }, 500L);
     }
