@@ -24,15 +24,15 @@ android {
 }
 
 dependencies {
-//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-//        exclude group: 'com.android.support', module: 'support-annotations'
-//    })
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Test
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile "junit:junit:$rootProject.ext.junitVersion"
 
+    // support
     compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
     compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
 
