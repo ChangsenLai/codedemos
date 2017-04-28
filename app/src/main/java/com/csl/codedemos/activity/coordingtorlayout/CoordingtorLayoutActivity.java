@@ -1,6 +1,5 @@
-package com.csl.codedemos.view;
+package com.csl.codedemos.activity.coordingtorlayout;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -8,11 +7,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.csl.codedemos.R;
+import com.csl.codedemos.activity.BaseActivity;
 import com.csl.codedemos.adapter.CoordingtorRecyclerAdapter;
 import com.csl.codedemos.databinding.ActivityCoordingtorlayoutBinding;
 
@@ -21,9 +19,10 @@ import java.util.List;
 
 /**
  * Created by ChangsenLai on 2017/4/26.
+ *
  */
 
-public class CoordingtorLayoutActivity extends Activity {
+public class CoordingtorLayoutActivity extends BaseActivity {
 
     public static void start(Context context) {
         Intent intent = new Intent(context, CoordingtorLayoutActivity.class);

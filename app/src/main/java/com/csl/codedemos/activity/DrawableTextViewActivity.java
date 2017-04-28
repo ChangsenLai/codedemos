@@ -1,6 +1,5 @@
 package com.csl.codedemos.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import com.csl.codedemos.R;
  * Created by laichangsen on 2017/4/27.
  */
 
-public class DrawableTextViewActivity extends Activity {
+public class DrawableTextViewActivity extends BaseActivity {
 
     public static void toActivity(Context context) {
         Intent intent = new Intent(context, DrawableTextViewActivity.class);
