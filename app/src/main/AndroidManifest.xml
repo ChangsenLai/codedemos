@@ -19,6 +19,7 @@
         <activity android:name=".activity.IconViewActivity" />
         <activity android:name=".activity.coordingtorlayout.CoordingtorLayoutActivity" />
         <activity android:name=".activity.coordingtorlayout.CoordingtorMainActivity" />
+        <activity android:name=".activity.RecyclerViewActivity" />
 
     </application>
 

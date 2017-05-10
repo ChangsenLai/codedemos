@@ -21,6 +21,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         dataBinding.setEvent(new Event());
+        RecyclerViewActivity.start(this);
     }
 
     public class Event {
