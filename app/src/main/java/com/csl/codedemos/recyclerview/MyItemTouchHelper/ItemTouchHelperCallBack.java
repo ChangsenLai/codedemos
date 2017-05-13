@@ -16,7 +16,13 @@ public class ItemTouchHelperCallBack extends ItemTouchHelper.Callback {
 
     @Override
     public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-        return true;
+        /*
+         if (recyclerView.getAdapter() instanceof OnItemMoveListener) {
+         OnItemMoveListener listener = ((OnItemMoveListener) recyclerView.getAdapter());
+         listener.onItemMove(viewHolder.getAdapterPosition(), target.getAdapterPosition());
+         }
+         */
+        return true;  //  配合 RecyclerView 的 adapter 的 notifyItemMoved(int fromPosition, int toPosition)
     }
 
     @Override
@@ -26,11 +32,11 @@ public class ItemTouchHelperCallBack extends ItemTouchHelper.Callback {
 
     @Override
     public boolean isLongPressDragEnabled() {
-        return false;
+        return true;  //  todo 长按支持拖动
     }
 
     @Override
     public boolean isItemViewSwipeEnabled() {
-        return false;
+        return false;  //  不支持滑动
     }
 }
