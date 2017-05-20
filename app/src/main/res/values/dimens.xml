@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- material design font of Chinese -->
+    <dimen name="text_title">21sp</dimen>
+    <dimen name="text_title_big">24sp</dimen>
+    <dimen name="text_title_second">17sp</dimen>
+    <dimen name="text">15sp</dimen>
+    <dimen name="text_big">17sp</dimen>
+    <dimen name="text_small">13sp</dimen>
+
+    <dimen name="screen_width_distance">15dp</dimen>
+
+</resources>
