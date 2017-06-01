@@ -1,4 +1,4 @@
-package com.csl.codedemos.view;
+package com.csl.codedemos.ui.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -11,7 +11,7 @@ import android.view.View;
 
 import com.csl.codedemos.R;
 import com.csl.codedemos.activity.BaseActivity;
-import com.csl.codedemos.adapter.CoordingtorRecyclerAdapter;
+import com.csl.codedemos.common.CoordingtorRecyclerAdapter;
 import com.csl.codedemos.databinding.ActivityCoordingtorlayoutBinding;
 
 import java.util.ArrayList;

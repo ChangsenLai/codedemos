@@ -1,4 +1,4 @@
-package com.csl.codedemos.recyclerview.MyItemTouchHelper;
+package com.csl.codedemos.ui.recyclerview;
 
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;

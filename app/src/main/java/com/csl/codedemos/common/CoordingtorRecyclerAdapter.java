@@ -1,4 +1,4 @@
-package com.csl.codedemos.adapter;
+package com.csl.codedemos.common;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,10 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
-
-/**
- * Created by laichangsen on 2017/4/27.
- */
 
 public class CoordingtorRecyclerAdapter extends RecyclerView.Adapter<CoordingtorRecyclerAdapter.InnerViewHolder> {
 
