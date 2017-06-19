@@ -6,17 +6,12 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.csl.codedemos.R;
-import com.csl.codedemos.activity.coordingtorlayout.CoordingtorLayoutActivity;
 import com.csl.codedemos.activity.coordingtorlayout.CoordingtorMainActivity;
 import com.csl.codedemos.common.User;
 import com.csl.codedemos.databinding.ActivityMainBinding;
 import com.csl.codedemos.gson.GsonConvert;
 import com.google.gson.reflect.TypeToken;
 
-/**
- * Created by ChangsenLai on 2017/4/21.
- *
- */
 
 public class MainActivity extends BaseActivity {
 
@@ -29,22 +24,25 @@ public class MainActivity extends BaseActivity {
         fromJson();
     }
 
+
     public class Event {
         public void testDrawableTextViewActivity() {
-            toDrawableTextViewActivity();
+            DrawableTextViewActivity.toActivity(MainActivity.this);
         }
+
         public void testIconView() {
-            toIconViewActivity();
+            IconViewActivity.toActivity(MainActivity.this);
         }
+
         public void testCoordingtorLayout() {
-//            toCoordingtorLayoutActivity();
-            toCoordingtorMainActivity();
+            CoordingtorMainActivity.start(MainActivity.this);
         }
     }
 
     private void fromJson() {
         String data = "";
-        User o = GsonConvert.newInstance().fromJson(data, new TypeToken<User>() {}.getType());
+        User o = GsonConvert.newInstance().fromJson(data, new TypeToken<User>() {
+        }.getType());
         Log.i("MainActivity", o.toString());
     }
 
@@ -52,21 +50,9 @@ public class MainActivity extends BaseActivity {
         IconViewActivity.toActivity(this);
     }
 
-    private void init() {
+    public void testFragment() {
+        FragmentActivity.start(MainActivity.this, FragmentActivity.TYPE_HOME);
     }
-
-    private void toDrawableTextViewActivity() {
-        DrawableTextViewActivity.toActivity(this);
-    }
-
-    private void toCoordingtorLayoutActivity() {
-        CoordingtorLayoutActivity.start(this);
-    }
-
-    private void toCoordingtorMainActivity() {
-        CoordingtorMainActivity.start(this);
-    }
-
 
 
 }

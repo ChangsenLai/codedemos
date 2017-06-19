@@ -29,6 +29,12 @@
             android:layout_height="wrap_content"
             android:onClick="@{() -> event.testCoordingtorLayout()}"
             android:text="test CoordingtorLayout" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> event.testFragment()}"
+            android:text="test Fragment" />
     </LinearLayout>
 
 </layout>
