@@ -42,4 +42,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:' + rootProject.ext.supportLibraryVersion
     //  gson
     compile 'com.google.code.gson:gson:2.8.1'
+    //  RecyclerView扩展
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
 }
