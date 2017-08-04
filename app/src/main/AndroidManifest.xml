@@ -2,6 +2,8 @@
 
     package="com.csl.codedemos">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,10 +19,9 @@
         </activity>
         <activity android:name=".activity.DrawableTextViewActivity" />
         <activity android:name=".activity.IconViewActivity" />
-        <activity android:name=".activity.coordingtorlayout.CoordingtorLayoutActivity" />
-        <activity android:name=".activity.coordingtorlayout.CoordingtorMainActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".activity.FragmentActivity" />
+        <activity android:name=".glide.GlideActivity" />
 
     </application>
 

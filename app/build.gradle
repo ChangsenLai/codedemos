@@ -18,7 +18,7 @@ android {
         }
     }
     dataBinding {
-        enabled true
+        enabled false
     }
     lintOptions {
         abortOnError false
@@ -44,4 +44,12 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.1'
     //  RecyclerView扩展
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+
+    //  glide
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+
+    //  butterknife
+    compile 'com.jakewharton:butterknife:8.7.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
 }

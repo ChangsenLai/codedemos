@@ -2,8 +2,6 @@ package com.csl.codedemos.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 
 import com.csl.codedemos.R;
 
@@ -19,8 +17,12 @@ public class IconViewActivity extends BaseActivity {
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_icon_view);
+    protected int getLayoutRes() {
+        return R.layout.activity_icon_view;
+    }
+
+    @Override
+    protected void init() {
+
     }
 }

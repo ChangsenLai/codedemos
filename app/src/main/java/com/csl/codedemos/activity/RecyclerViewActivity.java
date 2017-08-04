@@ -2,8 +2,6 @@ package com.csl.codedemos.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
@@ -17,6 +15,8 @@ import com.csl.codedemos.ui.recyclerview.commonadapter.CommonViewHolder;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 /**
  * author: laichangsen | create time: 2017/5/10
  */
@@ -27,17 +27,15 @@ public class RecyclerViewActivity extends BaseActivity {
         context.startActivity(intent);
     }
 
-    private RecyclerView recyclerview;
+    @BindView(R.id.recyclerview)
+    RecyclerView recyclerview;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recyclerview);
-        recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
-        init();
+    protected int getLayoutRes() {
+        return R.layout.activity_recyclerview;
     }
 
-    private void init() {
+    protected void init() {
         List<String> datas = new ArrayList<>();
         datas.add("a");
         datas.add("b");

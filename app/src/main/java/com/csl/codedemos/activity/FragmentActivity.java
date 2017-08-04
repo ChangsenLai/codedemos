@@ -2,8 +2,6 @@ package com.csl.codedemos.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 
@@ -31,9 +29,12 @@ public class FragmentActivity extends BaseActivity {
     }
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+    protected int getLayoutRes() {
+        return R.layout.activity_fragment;
+    }
+
+    @Override
+    protected void init() {
         renderFragment();
     }
 
